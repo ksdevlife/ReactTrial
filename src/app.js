@@ -1,14 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-//const App = () => ( 
-//<div> Hello React! </div>
-//);
 
+class Something extends React.Component {
+  render() {
+// const Something = () => (
+
+    return (
+      <div className="Something">Second Component</div>
+    );
+  }
+}
 class App extends React.Component {
   render() {
     return (
-      <div>Hello React!</div>
+      <div className="App">
+        <div>Hello React!</div>
+        <Something />
+      </div>
     );
   }
 }
