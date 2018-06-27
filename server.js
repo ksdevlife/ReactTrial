@@ -10,6 +10,7 @@ app.get('/', function(req, res) {
     res.sendFile(path.resolve(__dirname, 'public', 'index.html'))
 })
 
-app.listen(3000, function() {
-    console.log('app is listening');
+const LISTEN_PORT = 3000;
+app.listen(LISTEN_PORT, function() {
+    console.log('server is listening ' + LISTEN_PORT);
 })
